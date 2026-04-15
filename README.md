@@ -66,6 +66,7 @@ Los bucles (loops) son estructuras que permiten repetir un bloque de código var
 - Bucle for
   
 Se utiliza para iterar sobre una secuencia (lista, rango, string, etc.).
+
 👉 Es ideal cuando sabes cuántas veces quieres repetir una acción o cuando recorres una colección.
 
 #### 💻 Ejemplo
