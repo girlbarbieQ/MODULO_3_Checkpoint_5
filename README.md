@@ -19,9 +19,9 @@ if age >= 18:
     print("Eres mayor de edad")
 else:
     print("Eres menor de edad")
-´´´
+```
 #### 📌 Explicación:
-El programa evalúa si la variable edad cumple la condición (>= 18).
+El programa evalúa si la variable age cumple la condición (>= 18).
 - Si la condición es verdadera --> ejecuta el primer bloque
 - Si es falsa --> ejecuta el bloque alternativo
 
@@ -35,19 +35,21 @@ El programa evalúa si la variable edad cumple la condición (>= 18).
 ###### 🌎 Ejemplos en la vida real
 Los condicionales están presentes en casi cualquier aplicación real:
 
-####### 🔐 Login: validar usuario y contraseña
+🔐 Login: validar usuario y contraseña
 - Si la contraseña es correcta --> Entras
 - Si la contraseña es incorrecta --> Error
 
-####### 🛒 Ecommerce: comprobar stock antes de comprar
+🛒 Ecommerce: comprobar stock antes de comprar
 - Si hay stock --> puedes comprar
 - Si no hay stock --> 'Agotado'
 
-####### 🎮 Videojuegos: gestionar vidas, niveles o puntuaciones
+🎮 Videojuegos: gestionar vidas, niveles o puntuaciones
 - Si tienes 0 vidas --> Game Over
 - Si no --> el juego continua
 
 👉 En todos estos casos, el programa toma decisiones en tiempo real.
+
+
 
 
 
@@ -60,27 +62,30 @@ Los bucles (loops) son estructuras que permiten repetir un bloque de código var
 👉 Son fundamentales cuando trabajas con colecciones de datos como listas, diccionarios o rangos.
 
 
-###🔁 Tipos de bucles
-
-#### Bucle for
+### 🔁 Tipos de bucles
+- Bucle for
+  
 Se utiliza para iterar sobre una secuencia (lista, rango, string, etc.).
 👉 Es ideal cuando sabes cuántas veces quieres repetir una acción o cuando recorres una colección.
 
-##### 💻 Ejemplo
+#### 💻 Ejemplo
 ```python
 for i in range(5):
     print(i)
 ```
 
-###### 📌 Explicación:
-Recorre un rango de números del 0 al 4.
+##### 📌 Explicación:
+El bucle for recorre un rango de números, en este caso del 0 al 4.
+En cada vuelta, la variable i toma un valor distinto y se ejecuta el print.
+Esto permite repetir una acción varias veces sin tener que escribir el código muchas veces.
 
-#### Bucle while
+- Bucle while
+  
 Se ejecuta mientras una condición sea verdadera.
 
 👉 Es útil cuando no sabes exactamente cuántas veces se repetirá el proceso.
 
-##### 💻 Ejemplo
+#### 💻 Ejemplo
 ```python
 counter = 0
 
@@ -88,15 +93,19 @@ while counter < 5:
     print(counter)
     counter += 1
 ```
-###### 📌 Explicación:
-Se ejecuta hasta que la condición deja de cumplirse.
+##### 📌 Explicación:
+El bucle while se ejecuta mientras la condición sea verdadera (counter < 5).
+En cada repetición se imprime el valor y luego se incrementa el contador.
+Cuando la condición deja de cumplirse, el bucle se detiene.
 
-####### 🧠 Conceptos clave
+###### 🧠 Conceptos clave
 - Iteración: cada repetición del bucle
 - Condición: en while, determina cuándo termina
 - Control: evitar bucles infinitos
 
 👉 Los bucles permiten procesar grandes cantidades de datos de forma automática, lo cual es clave en programación real.
+
+
 
 
 
@@ -113,21 +122,27 @@ Permite generar una lista a partir de una secuencia, aplicando transformaciones 
 numbers = [x for x in range(5)]
 ```
 #### 📌 Explicación:
-Genera una lista de números del 0 al 4.
+Crea una lista recorriendo los valores del 0 al 4 usando range(5).
+En cada vuelta, el valor de x se añade a la lista automáticamente.
+Es una forma más rápida y compacta de crear listas sin usar un bucle for tradicional.
 
-##### 💻 Ejemplo con condición
+### 💻 Ejemplo con condición
 ```python
 numbers = [x for x in range(10) if x % 2 == 0]
 ```
-###### 📌 Explicación:
-Filtra solo los números pares.
+#### 📌 Explicación:
+Recorre los números del 0 al 9, pero solo añade los que cumplen la condición (x % 2 == 0).
+Esto permite filtrar los valores directamente mientras se crea la lista.
+El resultado es una lista solo con los números pares.
 
-####### 🧠 ¿Por qué son importantes?
+##### 🧠 ¿Por qué son importantes?
 - Reducen la cantidad de código
 - Mejoran la legibilidad
 - Sustituyen bucles tradicionales en muchos casos
 
 👉 Son muy utilizadas en análisis de datos y manipulación de listas.
+
+
 
 
 
@@ -138,14 +153,16 @@ Un argumento es el valor que se pasa a una función cuando esta es llamada. Perm
 👉 Los argumentos hacen que las funciones sean reutilizables y flexibles.
 
 ### 💻 Ejemplo
-´´´python
+```python
 def greeting(name):
     print("Hi", name)
 
 greeting("Bárbara")
-´´´
+```
 #### 📌 Explicación:
-"Bárbara" es el argumento.
+En este ejemplo se define una función que recibe un nombre como parámetro.
+Cuando se llama a la función con "Bárbara", ese valor se pasa como argumento.
+La función utiliza ese argumento para mostrar el mensaje por pantalla.
 
 ##### 🧠 Conceptos clave
 - Parámetro: variable definida en la función
@@ -162,10 +179,10 @@ Una función lambda es una función anónima (sin nombre) que se define en una s
 👉 Se utiliza para operaciones simples donde no es necesario crear una función completa.
 
 ### 💻 Ejemplo
-´´´python
+```python
 suma = lambda a, b: a + b
-print(suma(2, 3))
-´´´
+    print(suma(2, 3))
+```
 #### 📌 Explicación:
 Se define una función lambda que suma dos valores (a y b).
 La función se guarda en la variable suma.
@@ -188,9 +205,9 @@ pip es el gestor de paquetes de Python. Permite instalar, actualizar y eliminar 
 
 
 ### 💻 Ejemplo
-´´´bash 
+```bash 
 pip install numpy
-´´´
+```
 #### 📌 Explicación:
 El comando pip install numpy instala una librería externa en Python.
 Esta librería añade nuevas funcionalidades, en este caso herramientas para trabajar con números y cálculos.
